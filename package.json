@@ -1,0 +1,26 @@
+{
+  "name": "day3-gmail-agents-js",
+  "version": "1.0.0",
+  "description": "JavaScript (LangChain.js + LangGraph.js) port of the Day 3 Python demos: memory, tools, Gmail classifier, graph and agent",
+  "type": "module",
+  "scripts": {
+    "memory": "node src/fixMemory.js",
+    "gmail:test": "node src/gmailTest.js",
+    "gmail:classify": "node src/gmailClassify.js",
+    "gmail:graph": "node src/gmailLanggraph.js",
+    "gmail:agent": "node src/gmailAgent.js",
+    "tools": "node src/nfVsTool.js"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.62",
+    "@langchain/google-genai": "^0.2.14",
+    "@langchain/langgraph": "^0.4.0",
+    "dotenv": "^16.4.5",
+    "imapflow": "^1.0.191",
+    "mailparser": "^3.7.4",
+    "zod": "^3.25.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    env_file: .env
+    # Mount src so edits apply without rebuilding the image
+    volumes:
+      - ./src:/app/src
+    # Default demo. Override on the command line, for example:
+    #   docker compose run --rm app npm run gmail:agent
+    command: ["npm", "run", "memory"]
